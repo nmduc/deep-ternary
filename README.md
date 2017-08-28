@@ -1,7 +1,7 @@
 # deep-ternary
 This repository contains the source code for the paper titled "Deep Learning Sparse Ternary Projections For Compressed Sensing of Images"
 
-# Prerequisites
+## Prerequisites
 ```
 - Tensorflow version 1.2.1
 - Numpy version 1.12.1 
@@ -9,7 +9,7 @@ This repository contains the source code for the paper titled "Deep Learning Spa
 - opencv (cv2) version 2.4.11
 ```
 
-# Usage
+## Usage
 ### Prepare training data
 Currently, my dataset of patches is not too big so during training, a DataLoader instance will load all the patches into memory to feed the network. 
 To train with your own data, you may need to create a training set of image patches and store it as a hdf5 database.
@@ -42,11 +42,13 @@ python test.py --test_folder=test_images
 
 All images (jpg, png, tif) inside the test folder will be used for evaluation.
 
-# License
+## License
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
-# Reference
+## Reference
 If you find the source code useful, please cite us:
 ```
-D. M. Nguyen and E. Tsiligianni and N. Deligiannis, "Deep Learning Sparse Ternary Projections for Compressed Sensing of Images", IEEE Global Conference on Signal and Information Processing (GlobalSIP) 2017
+D. M. Nguyen and E. Tsiligianni and N. Deligiannis, 
+"Deep Learning Sparse Ternary Projections for Compressed Sensing of Images", 
+IEEE Global Conference on Signal and Information Processing (GlobalSIP) 2017
 ```
