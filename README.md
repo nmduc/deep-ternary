@@ -1,3 +1,4 @@
+# deep-ternary
 This repository contains the source code for the paper titled "Deep Learning Sparse Ternary Projections For Compressed Sensing of Images"
 
 # Prerequisites
