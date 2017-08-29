@@ -3,10 +3,17 @@ This repository contains the source code for the paper titled "Deep Learning Spa
 
 ## Prerequisites
 ```
-- Tensorflow version 1.2.1
-- Numpy version 1.12.1 
-- h5py version 2.7.0
-- opencv (cv2) version 2.4.11
+- Tensorflow 
+- Numpy 
+- h5py 
+- opencv (cv2) 
+```
+The code has been tested in Ubuntu 14.04 and MacOSX, with
+```
+- Tensorflow v.1.2.1
+- Numpy v.1.12.1 
+- h5py v.2.7.0
+- opencv (cv2) v.2.4.11
 ```
 
 ## Usage
@@ -50,5 +57,5 @@ If you find the source code useful, please cite us:
 ```
 D. M. Nguyen and E. Tsiligianni and N. Deligiannis, 
 "Deep Learning Sparse Ternary Projections for Compressed Sensing of Images", 
-IEEE Global Conference on Signal and Information Processing (GlobalSIP) 2017
+preprint https://arxiv.org/abs/1708.08311
 ```
