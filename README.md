@@ -18,11 +18,12 @@ The code has been tested in Ubuntu 14.04 and MacOSX, with
 
 ## Usage
 ### Prepare training data
-Currently, my dataset of patches is not too big so during training, a DataLoader instance will load all the patches into memory to feed the network. 
+Currently, my dataset of patches is not too big (~5GB) so during training, a DataLoader instance will load all the training patches into memory to feed the network. 
 To train with your own data, you may need to create a training set of image patches and store it as a hdf5 database.
+Alternatively, you can write your own DataLoader to load and feed your network from your own dataset.
+
 A sample hdf5 database, with 2000 32x32 image patches, is provided in data folder. 
 Note that in order to get good model, a much larger training database is necessary.
-Alternatively, you can write your own DataLoader to load and feed your network from your own dataset.
 
 ### Configurations
 The configs.py file sets all the default configurations and hyper-parameters.
