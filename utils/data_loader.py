@@ -63,7 +63,6 @@ class DataLoader():
         ''' return next batch 
         Outputs:
             x: shape batch_size x dim_x
-            y: shape batch_size * 5 x dim_y
         '''
         x_set = None
         start_ind = None

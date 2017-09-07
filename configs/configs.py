@@ -12,7 +12,7 @@ class ModelConfig():
 class TrainConfig(object):
     scale = 1.0 / 68.639677345  # scale and mean for data normalization
     mean_value = 116.180734     # scale and mean should be calculated from your training data
-    batch_size = 5000           # batch size
+    batch_size = 50             # batch size
     optimizer = "adam"          # can be "SGD", "momentum", "adam"
     initial_lr = 1e-2           # initial learning rate
     lr_update = 'step'          # 'val' or 'step'

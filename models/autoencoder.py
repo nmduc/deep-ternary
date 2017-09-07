@@ -6,12 +6,6 @@ import numpy as np
 
 class Autoencoder():
     def __init__(self, x_dim, cfg, log_dir=None):
-        ''' Initialize network
-        Inputs:
-            - x_dim: (int) dimension of patch
-            - cfg: configurations
-            - log_dir: directory to write log
-        '''
         self.parse_model_configs(cfg)
         self.x_dim = x_dim
         assert self.x_dim == self.patch_size * self.patch_size, 'Patch size and data dimension mis-match'

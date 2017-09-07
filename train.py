@@ -6,8 +6,8 @@ from models.autoencoder import Autoencoder
 import time 
 
 FLAGS = tf.app.flags.FLAGS
-tf.flags.DEFINE_string("data_dir", "/media/minhduc/Windows/mduc_work_data/BCS/", "Data directory.")
-tf.flags.DEFINE_string("output_basedir", "./outputs/", "Directory for saving and loading model checkpoints.")
+tf.flags.DEFINE_string("db_fname", "./data/batches_32x32_2k.h5", "Path to database file used for training")
+tf.flags.DEFINE_string("output_basedir", "./outputs/", "Directory for saving and loading model checkpoints")
 tf.flags.DEFINE_string("pretrained_fname", "", "Name of the pretrained model checkpoints (to resume from)")
 tf.flags.DEFINE_integer("n_epochs", 50, "Number of training epochs.")
 tf.flags.DEFINE_integer("log_every_n_steps", 50,
@@ -15,9 +15,8 @@ tf.flags.DEFINE_integer("log_every_n_steps", 50,
 tf.flags.DEFINE_integer("save_every_n_epochs", 10,
                         "Frequency at which session is saved.")
 tf.flags.DEFINE_boolean("log_time", False, "Whether to print out running time or not")
-tf.flags.DEFINE_integer("n_vals", 200000, "Number of validation samples.")
+tf.flags.DEFINE_integer("n_vals", 400, "Number of validation samples.")
 
-FLAGS.db_fname = FLAGS.data_dir + 'imagenet_val_32x32_5m.h5' 
 FLAGS.output_dir = FLAGS.output_basedir + 'snapshots/snapshot'
 FLAGS.log_dir = FLAGS.output_basedir + 'log/'
 
