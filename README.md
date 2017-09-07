@@ -39,7 +39,7 @@ python train.py --n_epochs=100 --initial_lr=0.005
 After preparing your dataset and set all the necessary hyper-parameters, you are ready to train your model.
 Run train.py, together with our hyper-parameters, to start the training:
 ```
-python train.py --db_db_fname=./data/batches_32x32_2k.h5 --output_basedir=output
+python train.py --db_db_fname=./data/patches_32x32_2k.h5 --output_basedir=output
 ```
 The trained model will be saved into output/snapshots 
 
