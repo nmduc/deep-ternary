@@ -6,7 +6,7 @@ from models.autoencoder import Autoencoder
 import time 
 
 FLAGS = tf.app.flags.FLAGS
-tf.flags.DEFINE_string("db_fname", "./data/batches_32x32_2k.h5", "Path to database file used for training")
+tf.flags.DEFINE_string("db_fname", "./data/patches_32x32_2k.h5", "Path to database file used for training")
 tf.flags.DEFINE_string("output_basedir", "./outputs/", "Directory for saving and loading model checkpoints")
 tf.flags.DEFINE_string("pretrained_fname", "", "Name of the pretrained model checkpoints (to resume from)")
 tf.flags.DEFINE_integer("n_epochs", 50, "Number of training epochs.")
