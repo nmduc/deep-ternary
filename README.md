@@ -39,7 +39,7 @@ python train.py --n_epochs=100 --initial_lr=0.005
 After preparing your dataset and set all the necessary hyper-parameters, you are ready to train your model.
 Run train.py, together with our hyper-parameters, to start the training:
 ```
-python train.py --db_db_fname=./data/patches_32x32_2k.h5 --output_basedir=output
+python train.py --db_fname=./data/patches_32x32_2k.h5 --output_basedir=output
 ```
 The trained model will be saved into output/snapshots 
 
@@ -60,5 +60,5 @@ If you find the source code useful, please cite us:
 ```
 D. M. Nguyen and E. Tsiligianni and N. Deligiannis, 
 "Deep Learning Sparse Ternary Projections for Compressed Sensing of Images", 
-preprint https://arxiv.org/abs/1708.08311
+IEEE Global Conference on Signal and Information Processing (GlobalSIP), 2017, pp. 1125-1129.
 ```
