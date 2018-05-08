@@ -23,7 +23,9 @@ To train with your own data, you may need to create a training set of image patc
 Alternatively, you can write your own DataLoader to load and feed your network from your own dataset.
 
 A sample hdf5 database, with 2000 32x32 image patches, is provided in data folder. 
-Note that in order to get good model, a much larger training database is necessary.
+Note that this small database is just a sample to show how the data should be prepared, and it is too small to train a well-performing model.
+
+In order to get good model, a much larger training database is necessary. To reproduce the results reported in the paper, you are recommended to download the dataset with 5 million patches from the following link: https://etrovub-my.sharepoint.com/:u:/g/personal/mdnguyen_etrovub_be/Eep0VK1VHK5Mtnpo4TliM6gBiJLb6nV2eQAusI1nYFyXXg?e=q4t4fY
 
 ### Configurations
 The configs.py file sets all the default configurations and hyper-parameters.
@@ -32,20 +34,23 @@ To use your own configurations, you can either edit these files, or put your con
 
 For example:
 ```
-python train.py --n_epochs=100 --initial_lr=0.005
+python train.py --n_epochs=50 --initial_lr=0.005
 ```
 
 ### Training
 After preparing your dataset and set all the necessary hyper-parameters, you are ready to train your model.
-Run train.py, together with our hyper-parameters, to start the training:
+Run train.py, together with our hyper-parameters, to start the training, for example:
 ```
-python train.py --db_fname=./data/patches_32x32_2k.h5 --output_basedir=output
+python train.py --db_fname=./data/patches_32x32_2k.h5 --batch_size=50 --output_basedir=output
+```
+or to train the model with the big database downloaded from the link above:
+```
+python train.py --db_fname=./data/imagenet_val_32x32_5m.h5 --batch_size=5000 --output_basedir=output
 ```
 The trained model will be saved into output/snapshots 
 
 ### Testing
 After training the model, you can test it with your images using the test function.
-
 ```
 python test.py --test_folder=test_images
 ```
