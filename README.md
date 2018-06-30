@@ -25,7 +25,8 @@ Alternatively, you can write your own DataLoader to load and feed your network f
 A sample hdf5 database, with 2000 32x32 image patches, is provided in data folder. 
 Note that this small database is just a sample to show how the data should be prepared, and it is too small to train a well-performing model.
 
-In order to get good model, a much larger training database is necessary. To reproduce the results reported in the paper, you are recommended to download the dataset with 5 million patches from the following link: https://etrovub-my.sharepoint.com/:u:/g/personal/mdnguyen_etrovub_be/EcJMTOcm2vFPjf4WqrPVuAkBTzyxvJnTHWsgRtj3Re2tYA?e=Fkk11Q
+In order to get good model, a much larger training database is necessary. To reproduce the results reported in the paper, you are recommended to download the dataset with 5 million patches. 
+(Note: Due to the strict policy of my university's admin, I cannot share the permanently the download link to this dataset. If you want to download it, please create a new issue here or send me an email.)
 
 ### Configurations
 The configs.py file sets all the default configurations and hyper-parameters.
