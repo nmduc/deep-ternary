@@ -64,7 +64,5 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 ## Reference
 If you find the source code useful, please cite us:
 ```
-D. M. Nguyen and E. Tsiligianni and N. Deligiannis, 
-"Deep Learning Sparse Ternary Projections for Compressed Sensing of Images", 
-IEEE Global Conference on Signal and Information Processing (GlobalSIP), 2017, pp. 1125-1129.
+D. M. Nguyen, E. Tsiligianni and N. Deligiannis, "Deep learning sparse ternary projections for compressed sensing of images," 2017 IEEE Global Conference on Signal and Information Processing (GlobalSIP), 2017, pp. 1125-1129.
 ```
